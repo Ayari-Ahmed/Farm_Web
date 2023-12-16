@@ -15,7 +15,6 @@ const sizeClasses = {
   txtRobotoRegular21: "font-normal font-roboto",
   txtPoppinsBold6425: "font-bold font-poppins",
   txtPoppinsBold26: "font-bold font-poppins",
-  txtLatoBold25: "font-bold font-lato",
   txtPoppinsRegular13Black900: "font-normal font-poppins",
   txtSpartanMedium2208: "font-medium font-spartan",
   txtSpartanRegular1806: "font-normal font-spartan",

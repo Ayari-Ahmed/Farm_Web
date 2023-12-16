@@ -2,7 +2,7 @@ import React from "react";
 
 import { Text } from "components";
 
-const DesktopEighteenColumnenteryouremail = (props) => {
+const SignInColumnenteryouremail = (props) => {
   return (
     <>
       <div className={props.className}>
@@ -24,8 +24,8 @@ const DesktopEighteenColumnenteryouremail = (props) => {
   );
 };
 
-DesktopEighteenColumnenteryouremail.defaultProps = {
+SignInColumnenteryouremail.defaultProps = {
   emailtext: "Enter your email address",
 };
 
-export default DesktopEighteenColumnenteryouremail;
+export default SignInColumnenteryouremail;
