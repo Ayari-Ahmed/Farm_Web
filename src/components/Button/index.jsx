@@ -9,7 +9,7 @@ const variants = {
       "border border-blue_gray-900 border-solid text-blue_gray-900",
   },
 };
-const sizes = { xs: "p-[15px]", sm: "p-[21px] sm:px-5" };
+const sizes = { xs: "p-4", sm: "p-[21px] sm:px-5" };
 
 const Button = ({
   children,
@@ -17,8 +17,8 @@ const Button = ({
   leftIcon,
   rightIcon,
   shape = "",
-  size = "sm",
-  variant = "fill",
+  size = "xs",
+  variant = "outline",
   color = "green_900",
   ...restProps
 }) => {

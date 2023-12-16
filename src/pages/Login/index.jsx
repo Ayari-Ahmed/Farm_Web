@@ -1,28 +1,29 @@
 import React from "react";
 
 import { Button, Img, Input, Text } from "components";
-import DesktopEighteenColumnenteryouremail from "components/DesktopEighteenColumnenteryouremail";
+import SignInColumnenteryouremail from "components/SignInColumnenteryouremail";
 
-const DesktopTwentyTwoPage = () => {
+const LoginPage = () => {
   return (
     <>
       <div className="bg-white-A700 font-lato h-[1024px] mx-auto relative w-full">
         <div
-          className="bg-cover bg-no-repeat flex flex-col h-full items-center justify-start m-auto py-[5px] rounded-[15px] w-full"
-          style={{ backgroundImage: "url('images/img_group39.png')" }}
+          className="bg-cover bg-no-repeat flex flex-col h-full items-center justify-start m-auto p-[9px] rounded-[15px] w-full"
+          style={{ backgroundImage: "url('images/img_group103.png')" }}
         >
-          <div className="flex flex-col md:gap-10 gap-36 items-center justify-start mb-[191px] w-full">
-            <div className="bg-white-A700 flex flex-col items-end justify-end p-[33px] sm:px-5 rounded-[15px] w-full">
-              <div className="flex flex-col items-center justify-start mr-[37px] mt-0.5 md:px-5">
-                <Text
-                  className="sm:text-[21px] md:text-[23px] text-[25px] text-blue_gray-900"
-                  size="txtLatoBold25"
+          <div className="flex flex-col md:gap-10 gap-[140px] items-center justify-start max-w-[1422px] mb-[187px] mx-auto md:px-5 w-full">
+            <div className="bg-white-A700 flex flex-col items-end justify-start p-[15px] rounded-[21px] w-full">
+              <div className="flex flex-col items-center justify-start mb-[5px] mr-[47px] w-[11%] md:w-full">
+                <Button
+                  className="cursor-pointer font-bold h-16 leading-[normal] sm:text-[21px] md:text-[23px] text-[25px] text-center w-[142px]"
+                  shape="round"
+                  color="blue_gray_900"
                 >
                   Home
-                </Text>
+                </Button>
               </div>
             </div>
-            <div className="bg-white-A700_d1 flex flex-col items-center justify-start p-[54px] md:px-5 rounded-[15px] w-2/5 md:w-full">
+            <div className="bg-white-A700_d1 flex flex-col items-center justify-start p-[54px] md:px-10 sm:px-5 rounded-[15px] w-[41%] md:w-full">
               <div className="flex flex-col items-center justify-start mb-4 w-[98%] md:w-full">
                 <Text
                   className="sm:text-[31px] md:text-[33px] text-[35px] text-black-900"
@@ -42,11 +43,11 @@ const DesktopTwentyTwoPage = () => {
                   Login
                 </Text>
                 <div className="flex flex-col font-poppins items-center justify-start mt-[13px] w-full">
-                  <DesktopEighteenColumnenteryouremail
+                  <SignInColumnenteryouremail
                     className="flex flex-col gap-[11px] items-start justify-start rounded-[15px] w-full"
                     emailvalue="example@gmail.com"
                   />
-                  <DesktopEighteenColumnenteryouremail
+                  <SignInColumnenteryouremail
                     className="flex flex-col gap-2.5 items-start justify-start mt-[18px] rounded-[15px] w-full"
                     emailtext="Enter your Password"
                   />
@@ -76,7 +77,7 @@ const DesktopTwentyTwoPage = () => {
                   </div>
                   <Button
                     className="cursor-pointer font-medium leading-[normal] min-w-[236px] mt-[17px] rounded-[15px] text-base text-center"
-                    size="xs"
+                    variant="fill"
                   >
                     Sign in
                   </Button>
@@ -86,13 +87,13 @@ const DesktopTwentyTwoPage = () => {
           </div>
         </div>
         <Img
-          className="absolute h-[225px] left-[0] object-cover top-[0] w-[17%]"
-          src="images/img_12.png"
-          alt="Twelve"
+          className="absolute h-[159px] left-[1%] object-cover top-[0] w-[158px]"
+          src="images/img_17_159x158.png"
+          alt="seventeen"
         />
       </div>
     </>
   );
 };
 
-export default DesktopTwentyTwoPage;
+export default LoginPage;

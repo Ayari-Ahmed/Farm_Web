@@ -1,17 +1,33 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Input, Text } from "components";
 
-const DesktopTwentyFourPage = () => {
+const SignUpPage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
-      <div className="bg-white-A700 font-poppins h-[1024px] mx-auto relative w-full">
-        <div className="h-[1024px] sm:h-[1082px] md:h-[977px] m-auto md:px-5 w-full">
-          <div
-            className="bg-cover bg-no-repeat flex flex-col h-full items-center justify-end m-auto p-[50px] md:px-10 sm:px-5 w-full"
-            style={{ backgroundImage: "url('images/img_group47.png')" }}
-          >
-            <div className="bg-white-A700_bf flex flex-col items-start justify-center mt-[183px] p-[15px] rounded-[40px] w-[41%] md:w-full">
+      <div className="bg-white-A700 font-lato h-[1024px] mx-auto relative w-full">
+        <div
+          className="bg-cover bg-no-repeat flex flex-col h-full items-center justify-start m-auto p-[9px] w-full"
+          style={{ backgroundImage: "url('images/img_group111.png')" }}
+        >
+          <div className="flex flex-col md:gap-10 gap-[118px] items-center justify-start max-w-[1422px] mb-[41px] mt-1.5 mx-auto md:px-5 w-full">
+            <div className="bg-white-A700 flex flex-col items-end justify-start p-[15px] rounded-[21px] w-full">
+              <div className="flex flex-col items-center justify-start mb-[5px] mr-[47px] w-[11%] md:w-full">
+                <Button
+                  className="common-pointer cursor-pointer font-bold h-16 leading-[normal] sm:text-[21px] md:text-[23px] text-[25px] text-center w-[142px]"
+                  onClick={() => navigate("/home1")}
+                  shape="round"
+                  color="blue_gray_900"
+                >
+                  Home
+                </Button>
+              </div>
+            </div>
+            <div className="bg-white-A700_bf flex flex-col font-poppins items-start justify-center p-[15px] rounded-[40px] w-[38%] md:w-full">
               <div className="flex flex-col ml-7 md:ml-[0] mt-[33px] relative w-[89%] sm:w-full">
                 <div className="flex flex-row items-start justify-between mx-auto w-full">
                   <Text
@@ -26,8 +42,9 @@ const DesktopTwentyFourPage = () => {
                     </span>
                   </Text>
                   <Text
-                    className="text-[13px] text-blue_gray-400"
+                    className="common-pointer text-[13px] text-blue_gray-400"
                     size="txtPoppinsRegular13"
+                    onClick={() => navigate("/signin")}
                   >
                     <span className="text-blue_gray-400 font-poppins text-left font-normal">
                       <>
@@ -58,7 +75,7 @@ const DesktopTwentyFourPage = () => {
                           First name
                         </Text>
                         <Input
-                          name="groupFiftyOne"
+                          name="group115"
                           placeholder="User name"
                           className="font-light leading-[normal] p-0 placeholder:text-gray-600 text-left text-sm w-full"
                           wrapClassName="border border-gray-500 border-solid w-full"
@@ -77,7 +94,7 @@ const DesktopTwentyFourPage = () => {
                           Last name
                         </Text>
                         <Input
-                          name="groupFiftyTwo"
+                          name="group116"
                           placeholder="Last name"
                           className="font-light leading-[normal] p-0 placeholder:text-gray-600 text-left text-sm w-full"
                           wrapClassName="border border-gray-500 border-solid mt-1 w-full"
@@ -97,7 +114,7 @@ const DesktopTwentyFourPage = () => {
                         Contact Number
                       </Text>
                       <Input
-                        name="groupFiftyThree"
+                        name="group117"
                         placeholder="Contact Number"
                         className="font-light leading-[normal] p-0 placeholder:text-gray-600 text-left text-sm w-full"
                         wrapClassName="border border-gray-500 border-solid mt-1 w-full"
@@ -137,7 +154,7 @@ const DesktopTwentyFourPage = () => {
                     Enter your Password
                   </Text>
                   <Input
-                    name="groupFifty"
+                    name="group114"
                     placeholder="Create a secure password"
                     className="font-light leading-[normal] p-0 placeholder:text-gray-600 text-left text-sm w-full"
                     wrapClassName="border border-gray-500 border-solid w-full"
@@ -152,31 +169,21 @@ const DesktopTwentyFourPage = () => {
               <Button
                 className="cursor-pointer font-medium leading-[normal] mb-[41px] min-w-[236px] md:ml-[0] ml-[149px] mt-8 text-base text-center"
                 shape="round"
-                size="xs"
+                variant="fill"
               >
                 Sign up
               </Button>
             </div>
           </div>
-          <div className="absolute bg-white-A700 flex flex-col font-lato inset-x-[0] items-end justify-end mx-auto p-8 sm:px-5 top-[0] w-full">
-            <Button
-              className="cursor-pointer font-medium h-16 leading-[normal] mr-[17px] mt-[18px] text-[18.06px] text-center w-[142px]"
-              shape="round"
-              color="blue_gray_900"
-              variant="outline"
-            >
-              Home
-            </Button>
-          </div>
         </div>
         <Img
-          className="absolute h-[233px] left-[0] object-cover top-[0] w-1/5"
-          src="images/img_11.png"
-          alt="Eleven"
+          className="absolute h-[165px] left-[1%] object-cover top-[0] w-[11%]"
+          src="images/img_16.png"
+          alt="sixteen"
         />
       </div>
     </>
   );
 };
 
-export default DesktopTwentyFourPage;
+export default SignUpPage;

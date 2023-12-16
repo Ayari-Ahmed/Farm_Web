@@ -1,102 +1,119 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Line, List, Text } from "components";
 
-const DesktopTwentyThreePage = () => {
+const Home1Page = () => {
+  const navigate = useNavigate();
+
   return (
     <>
-      <div className="bg-white-A700 flex flex-col items-center justify-start mx-auto pb-[69px] w-full">
+      <div className="bg-white-A700 flex flex-col items-center justify-start mx-auto pb-[26px] w-full">
         <div className="flex flex-col items-center justify-start w-full">
-          <div className="font-lato md:h-[1301px] sm:h-[731px] h-[954px] md:px-5 relative w-full">
-            <div className="absolute md:h-[1301px] sm:h-[731px] h-[945px] inset-[0] justify-center m-auto w-full">
-              <div className="absolute bg-blue-100_19 flex md:flex-col flex-row gap-9 inset-x-[0] items-center justify-end mx-auto p-[17px] top-[0] w-full">
-                <div className="flex md:flex-1 sm:flex-col flex-row sm:gap-5 items-center justify-center w-[30%] md:w-full">
-                  <Text
-                    className="text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl"
-                    size="txtLatoBold24"
+          <div className="font-lato md:h-[1444px] sm:h-[874px] h-[954px] md:px-5 relative w-full">
+            <div className="absolute flex flex-col gap-[43px] h-max inset-[0] items-center justify-center m-auto w-full">
+              <div className="bg-teal-100_19 flex flex-row items-center justify-center p-[17px] rounded-[43px] w-full">
+                <div className="flex md:flex-col flex-row gap-9 items-center justify-between w-[42%]">
+                  <div className="flex flex-row items-center justify-between w-[73%] md:w-full">
+                    <Text
+                      className="text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl"
+                      size="txtLatoBold24"
+                    >
+                      Home
+                    </Text>
+                    <Text
+                      className="text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl"
+                      size="txtLatoBold24"
+                    >
+                      About Us
+                    </Text>
+                    <a
+                      href="javascript:"
+                      className="text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl"
+                    >
+                      <Text size="txtLatoBold24">Contact Us</Text>
+                    </a>
+                    <a className="text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl">
+                      <Text
+                        className="common-pointer"
+                        size="txtLatoBold24"
+                        onClick={() => navigate("/signin")}
+                      >
+                        Sign In
+                      </Text>
+                    </a>
+                  </div>
+                  <Button
+                    className="common-pointer cursor-pointer font-medium h-16 leading-[normal] min-w-[142px] text-[18.06px] text-center"
+                    onClick={() => navigate("/registerpage")}
+                    shape="round"
+                    size="sm"
+                    variant="fill"
                   >
-                    Home
-                  </Text>
-                  <Text
-                    className="sm:ml-[0] ml-[33px] text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl"
-                    size="txtLatoBold24"
-                  >
-                    About Us
-                  </Text>
-                  <a
-                    href="javascript:"
-                    className="sm:ml-[0] ml-[38px] text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl"
-                  >
-                    <Text size="txtLatoBold24">Contact Us</Text>
-                  </a>
-                  <a
-                    href="javascript:"
-                    className="ml-9 sm:ml-[0] text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl"
-                  >
-                    <Text size="txtLatoBold24">Sign In</Text>
-                  </a>
+                    Get Started
+                  </Button>
                 </div>
-                <Button
-                  className="cursor-pointer font-medium h-16 leading-[normal] min-w-[142px] mr-4 text-[18.06px] text-center"
-                  shape="round"
-                >
-                  Get Started
-                </Button>
               </div>
-              <div className="bg-blue_gray-900_66 h-4 ml-auto mr-24 mt-[421px] rounded-[50%] w-4"></div>
-              <div className="absolute bg-blue-100_26 bottom-[0] flex md:h-[1301px] sm:h-[731px] h-[850px] inset-x-[0] justify-end mx-auto p-[43px] md:px-10 sm:px-5 w-full">
-                <Img
-                  className="border border-blue_gray-900 border-solid h-10 mb-[92px] ml-auto mr-[29px] mt-auto w-10"
-                  src="images/img_star2.svg"
-                  alt="starTwo"
-                />
-                <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto w-[94%]">
-                  <div className="flex md:flex-col flex-row gap-[30px] items-center justify-between w-full">
-                    <div className="flex flex-col gap-[21px] items-start justify-start">
-                      <Text
-                        className="sm:text-[41px] md:text-[47px] text-[55px] text-blue_gray-900 w-full"
-                        size="txtSpartanBold55"
-                      >
-                        <span className="text-blue_gray-900 font-poppins text-left font-bold">
-                          Invest in Farms with Ease,{" "}
-                        </span>
-                        <span className="text-green-900 font-poppins text-left font-bold">
-                          Seamlessly
-                        </span>
-                        <span className="text-blue_gray-900 font-poppins text-left font-bold">
-                          {" "}
-                          Connecting You to Agriculture.
-                        </span>
-                      </Text>
-                      <Text
-                        className="leading-[180.00%] ml-1 md:ml-[0] text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl w-[96%] sm:w-full"
-                        size="txtPoppinsRegular24"
-                      >
-                        Invest confidently in the agriculture industry. Explore
-                        our platform, find exciting farm investment
-                        opportunities, and enjoy the benefits of a thriving
-                        sector. Start growing your wealth through agricultural
-                        investments today.
-                      </Text>
-                      <Button
-                        className="cursor-pointer font-medium font-spartan h-16 leading-[normal] text-[18.06px] text-center w-[177px]"
-                        shape="round"
-                      >
-                        Get Started
-                      </Button>
+              <div className="md:h-[1301px] sm:h-[731px] h-[802px] relative w-full">
+                <div className="bg-blue_gray-900_66 h-4 ml-auto mr-[92px] mt-[278px] rounded-[50%] w-4"></div>
+                <div className="absolute bg-blue-100_26 flex md:h-[1301px] sm:h-[731px] h-[802px] inset-[0] justify-end m-auto p-[23px] sm:px-5 w-full">
+                  <Img
+                    className="border border-blue_gray-900 border-solid h-10 mb-28 ml-auto mr-[49px] mt-auto w-10"
+                    src="images/img_star2.svg"
+                    alt="starTwo"
+                  />
+                  <div className="absolute flex flex-col h-max inset-[0] items-center justify-center m-auto w-[94%]">
+                    <div className="flex md:flex-col flex-row gap-[30px] items-center justify-between w-full">
+                      <div className="flex flex-col gap-[21px] items-start justify-start">
+                        <Text
+                          className="sm:text-[41px] md:text-[47px] text-[55px] text-blue_gray-900 w-full"
+                          size="txtSpartanBold55"
+                        >
+                          <span className="text-blue_gray-900 font-poppins text-left font-bold">
+                            Invest in Farms with Ease,{" "}
+                          </span>
+                          <span className="text-green-900 font-poppins text-left font-bold">
+                            Seamlessly
+                          </span>
+                          <span className="text-blue_gray-900 font-poppins text-left font-bold">
+                            {" "}
+                            Connecting You to Agriculture.
+                          </span>
+                        </Text>
+                        <Text
+                          className="leading-[180.00%] ml-1 md:ml-[0] text-2xl md:text-[22px] text-blue_gray-900 sm:text-xl w-[96%] sm:w-full"
+                          size="txtPoppinsRegular24"
+                        >
+                          Invest confidently in the agriculture industry.
+                          Explore our platform, find exciting farm investment
+                          opportunities, and enjoy the benefits of a thriving
+                          sector. Start growing your wealth through agricultural
+                          investments today.
+                        </Text>
+                        <Button
+                          className="common-pointer cursor-pointer font-medium font-spartan h-16 leading-[normal] text-[18.06px] text-center w-[177px]"
+                          onClick={() => navigate("/registerpage")}
+                          shape="round"
+                          size="sm"
+                          variant="fill"
+                        >
+                          Get Started
+                        </Button>
+                      </div>
+                      <Img
+                        className="h-[731px] md:h-auto object-cover rounded-[361px]"
+                        src="images/img_istockphoto120.png"
+                        alt="istockphoto120"
+                      />
                     </div>
-                    <Img
-                      className="h-[731px] md:h-auto object-cover rounded-[361px]"
-                      src="images/img_istockphoto120.png"
-                      alt="istockphoto120"
-                    />
                   </div>
                 </div>
               </div>
             </div>
             <Img
-              className="absolute h-[197px] left-[1%] object-cover top-[0] w-[13%]"
-              src="images/img_14.png"
+              className="absolute h-[166px] left-[0] object-cover top-[0] w-[14%]"
+              src="images/img_14_166x223.png"
               alt="Fourteen"
             />
           </div>
@@ -359,15 +376,16 @@ const DesktopTwentyThreePage = () => {
               </Text>
               <div className="bg-green-900 flex flex-col font-spartan h-16 md:h-auto items-center justify-center md:ml-[0] ml-[178px] mr-[349px] sm:px-5 px-[25.09px] py-[13.05px] rounded-[10px] w-[177px]">
                 <Text
-                  className="text-[18.06px] text-white-A700 w-auto"
+                  className="common-pointer text-[18.06px] text-white-A700 w-auto"
                   size="txtSpartanMedium1806"
+                  onClick={() => navigate("/registerpage")}
                 >
                   Get Started
                 </Text>
               </div>
             </div>
           </div>
-          <div className="font-spartan sm:h-[291px] md:h-[314px] h-[349px] mt-[51px] md:px-5 relative w-full">
+          <div className="font-spartan sm:h-[334px] h-[349px] md:h-[357px] mt-[94px] md:px-5 relative w-full">
             <div className="md:h-60 h-[349px] m-auto w-full">
               <Img
                 className="absolute h-60 inset-x-[0] mx-auto object-cover top-[0] w-full"
@@ -406,7 +424,7 @@ const DesktopTwentyThreePage = () => {
                     <Text size="txtSpartanBold1606">Contact us</Text>
                   </a>
                 </div>
-                <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between mr-[58px] w-[96%] md:w-full">
+                <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between mr-[21px] w-[99%] md:w-full">
                   <Text
                     className="leading-[177.00%] text-[18.06px] text-blue_gray-900"
                     size="txtSpartanRegular1806"
@@ -423,11 +441,11 @@ const DesktopTwentyThreePage = () => {
                       size="txtRobotoRegular1606"
                     >
                       <>
-                        +2349123456789
+                        +216 23 557 166
                         <br />
                         <br />
                         <br />
-                        cultify@gmail.com
+                        ayariayari54@gmail.com
                       </>
                     </Text>
                   </div>
@@ -441,4 +459,4 @@ const DesktopTwentyThreePage = () => {
   );
 };
 
-export default DesktopTwentyThreePage;
+export default Home1Page;
